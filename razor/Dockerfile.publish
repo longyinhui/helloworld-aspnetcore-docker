@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+WORKDIR /app
+COPY . /app
+EXPOSE 84
+
+ENTRYPOINT ["dotnet", "helloworld.razor.dll"]
